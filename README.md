@@ -91,6 +91,7 @@ Langkah-langkah
 sumber: https://academy.dqlab.id/main/livecode/157/295/1313?pr=0
 
 Bedah sendiri
+
 Copy Code dibawah dan lihat hasilnya
 
 		# Data
