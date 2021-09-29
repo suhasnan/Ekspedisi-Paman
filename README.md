@@ -88,6 +88,8 @@ Langkah-langkah
     
           print (total_pengeluaran)
 
+sumber: https://academy.dqlab.id/main/livecode/157/295/1313?pr=0
+
 
 
 
