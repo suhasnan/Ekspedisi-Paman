@@ -90,6 +90,67 @@ Langkah-langkah
 
 sumber: https://academy.dqlab.id/main/livecode/157/295/1313?pr=0
 
+Bedah sendiri
+Copy Code dibawah dan lihat hasilnya
+
+		# Data
+		uang_jalan = 1500000
+		jumlah_hari = 31
+		list_plat_nomor = [8993, 2198, 2501, 2735, 3772, 4837, 9152]
+
+		# Pengecekan kendaraan dengan nomor pelat ganjil atau genap 
+		# Deklarasikan kendaraan_genap dan kendaraan_ganjil = 0
+		kendaraan_genap = 0
+		kendaraan_ganjil = 0
+		for plat_nomor in list_plat_nomor:
+		    if plat_nomor % 2 == 0:
+			kendaraan_genap += 1
+		    else:
+			kendaraan_ganjil += 1
+
+		# Total pengeluaran untuk kendaraan dengan nomor pelat ganjil 
+		# dan genap dalam 1 bulan
+		i = 1
+
+		#total_pengeluaran = 0
+		total_pengeluaran_ganjil = 0
+		total_pengeluaran_genap = 0
+
+		# lihat total hari genap dan ganjil
+		tanggal_genap = 0
+		tanggal_ganjil = 0
+
+		while i <= jumlah_hari:
+		    if i % 2 == 0:
+			tanggal_genap += 1
+			total_pengeluaran_genap += (kendaraan_genap * uang_jalan)
+		    else:
+			tanggal_ganjil += 1
+			total_pengeluaran_ganjil += (kendaraan_ganjil * uang_jalan) 
+		    i += 1
+
+
+		print("----Total kendaraan genap & ganjil----")
+
+		# lihat total kendaraan genap dan total kendaraan ganjil
+		print("Total kendaraan genap : ", kendaraan_genap)
+		print("Total kendaraan ganjil : ", kendaraan_ganjil)
+
+		print(" ")
+		print("----Total tanggal genap & ganjil----")
+
+		# lihat total berapa banyak tanggal genap dan tanggal ganjil
+		print("total tanggal genap : ", tanggal_genap)
+		print("total tanggal ganjil : ", tanggal_ganjil)
+
+		print(" ")
+		print("----Total pengeluaran genap & ganjil----")
+
+		# lihat semua pengeluaran
+		print("Total pengeluaran genap = ", "Rp", total_pengeluaran_genap)
+		print("Total pengeluaran ganjil = ", "Rp", total_pengeluaran_ganjil)
+		print("Total keseluruhan pengeluaran = ", "Rp", total_pengeluaran_ganjil + total_pengeluaran_genap)
+
 
 
 
